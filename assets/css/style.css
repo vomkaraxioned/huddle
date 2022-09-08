@@ -247,7 +247,7 @@ h1 {
 
 .fruits {
     width: 30%;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 20px 5%;
     display: flex;
     background-color: #b80000;
@@ -262,6 +262,22 @@ h1 {
     color: #fff;
     text-align: center;
     cursor: pointer;
+}
+
+.input {
+    width: 40%;
+    margin: 40px auto;
+    display: flex;
+}
+
+input {
+    width: 100%;
+    padding: 10px 5%;
+    outline: 1px solid;
+}
+
+input:focus {
+    outline: 1px solid #0059b2;
 }
 
 

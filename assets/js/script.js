@@ -57,3 +57,33 @@ child.addEventListener('click', (e) => {
 // })
 
 //bubbling ends here
+
+
+//-----Delegation-----
+
+let fruits = document.querySelector(".fruits");
+
+fruits.addEventListener('click', (e) => {
+    // alert(e.target.dataset.apple);
+    if (e.target.dataset.apple != undefined) {
+        alert("apple a day keep doctor away");
+    } else {
+        alert(e.target.innerHTML);
+    }
+});
+
+//delegation ends here
+
+//debouncing start here
+
+let inputField = document.querySelector("#user-input");
+let timer, input, count = 0;
+inputField.addEventListener("keyup", () => {
+    clearTimeout(timer);
+    timer = setTimeout(dataShow, 300);
+});
+
+function dataShow() {
+    console.log("Getting data....." + count);
+    count++;
+}
